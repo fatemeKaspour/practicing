@@ -1,8 +1,12 @@
+"use strict";
 //afunction to show firstName with alert
-function UserName (firstName , func){
+function userName (firstName , func){
     func(firstName);
 }
-UserName('fateme' , alert);
+// userName('fateme' , alert);
 //an arrow function
-let SumNumbers =(num1 , num2) => num1 + num2;
-console.log(SumNumbers(2,6));
+let sumNumbers =(num1 , num2) => num1 + num2;
+// console.log(sumNumbers(2,6));
+//convert minutes to seconds
+let convertToMinutes = (minutes)=> minutes*60;
+console.log(convertToMinutes(1));

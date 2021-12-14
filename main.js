@@ -13,3 +13,14 @@ let convertToMinutes = (minutes)=> minutes*60;
 // computing area of triangle
 let areaTriangle = (height , weight) => (height*weight)/2
 // console.log(areaTriangle(50,20));
+//make conditional function
+function isLessThan100(a , b){
+    let sum = a + b ;
+    if(sum <100){
+        return true;
+    }else{
+        return false;
+    }
+}
+const result = isLessThan100(60,70);
+// console.log(result);

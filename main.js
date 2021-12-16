@@ -31,3 +31,22 @@ const result = isLessThan100(60,70);
 // console.log(result);
 //************************************************** end of functions
 //**************************************************object
+let user ={
+    firstName : "fateme",
+    lastName : "kaspour",
+    age : "22"
+};
+// console.log(`${user.firstName} ${user.lastName} is ${user.age} years old`);
+//****************************************************var , let & const
+//-----var
+carName = "Benz";
+var carName;
+// console.log(carName);//Benz
+//-----let
+carName2 = "Volvo";
+let carName2;
+// console.log(carName2);//ReferenceError
+//-----const
+carName3 = "BMW";
+const carName3;
+// console.log(carName3);//SyntaxError

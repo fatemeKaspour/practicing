@@ -10,3 +10,6 @@ let sumNumbers =(num1 , num2) => num1 + num2;
 //convert minutes to seconds
 let convertToMinutes = (minutes)=> minutes*60;
 // console.log(convertToMinutes(1));
+// computing area of triangle
+let areaTriangle = (height , weight) => (height*weight)/2
+// console.log(areaTriangle(50,20));

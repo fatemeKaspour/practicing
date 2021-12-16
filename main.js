@@ -1,4 +1,5 @@
 "use strict";
+//********************************************functions
 //a function to show firstName with alert
 function userName (firstName , func){
     func(firstName);
@@ -28,3 +29,5 @@ let areaTriangle = (height , weight) => (height*weight)/2
 let isLessThan100 = (a , b) => (a + b >100) ? false : true;
 const result = isLessThan100(60,70);
 // console.log(result);
+//************************************************** end of functions
+//**************************************************object

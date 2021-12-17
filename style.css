@@ -14,4 +14,10 @@
     padding-left: 20px;
     padding-right: 20px;
     color: crimson;
+    transition: 1.5s;
+}
+.active-btn:hover{
+    padding-left: 28px;
+    padding-right: 28px;
+    cursor: pointer;
 }

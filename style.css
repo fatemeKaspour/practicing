@@ -6,7 +6,7 @@
     margin-top: 21px;
     text-align: center;
 }
-.active-btn{
+#active-btn{
     margin-top: 101px;
     margin-left: 47%;
     background-color: lightsalmon;
@@ -17,7 +17,7 @@
     color: crimson;
     transition: 1.5s;
 }
-.active-btn:hover{
+#active-btn:hover{
     padding-left: 28px;
     padding-right: 28px;
     cursor: pointer;

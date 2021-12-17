@@ -1,7 +1,10 @@
 (function(){
     window.app = window.app || {};
-    window.app.Element = {
-
-    }
     
+    // make an active button
+    var btn = document.getElementById("active-btn");
+    btn.addEventListener("click" , function(event){
+        alert("Hello world!");
+    })
+
 })();

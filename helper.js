@@ -5,7 +5,7 @@
     };
     /**
     * @return{HTMLElement}
-    * @param {Otring} tagName
+    * @param {String} tagName
     * @param {Object} attribute
     * @param {HTMLElement | String | Array} content
     */

@@ -92,4 +92,14 @@ let adminPremission ={
 let admin4 = new Object;
 Object.assign(admin4,user4,adminPremission,{canView : true});
 
-console.log(admin4);//Object { name: "sanaz", canDelete: true }
+// console.log(admin4);//Object { name: "sanaz", canDelete: true }
+// ***********************************************add function as properties to object
+let user5 = {
+    name:"ali",
+    age:22,
+    nationality : "iran",
+    speak :function (message){
+        alert(message)
+    }
+}
+// user5.speak("hello world");

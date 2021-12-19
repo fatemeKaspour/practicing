@@ -90,6 +90,6 @@ let adminPremission ={
     canDelete : true,
 }
 let admin4 = new Object;
-Object.assign(admin4,user4,adminPremission);
+Object.assign(admin4,user4,adminPremission,{canView : true});
 
-// console.log(admin4);//Object { name: "sanaz", canDelete: true }
+console.log(admin4);//Object { name: "sanaz", canDelete: true }

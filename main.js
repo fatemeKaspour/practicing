@@ -89,7 +89,7 @@ let user4 ={
 let adminPremission ={
     canDelete : true,
 }
-let admin4 = new Object;
+let admin4 = {};
 Object.assign(admin4,user4,adminPremission,{canView : true});
 
 // console.log(admin4);//Object { name: "sanaz", canDelete: true }
@@ -102,4 +102,15 @@ let user5 = {
         alert(`${this.firstName} said :${message}`);
     },
 }
-user5.speak("hello world");
+// user5.speak("hello world");
+// ************************************************function constructor
+function User (firstName , lastName , age){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age ;
+    this.speak = function(message){
+        alert(`${this.firstName} said : ${message}`);
+    }
+}
+let admin6 = new User('fateme' , 'kaspour' , 22);
+console.log(admin6);

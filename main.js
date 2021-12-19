@@ -43,10 +43,16 @@ carName = "Benz";
 var carName;
 // console.log(carName);//Benz
 //-----let
-carName2 = "Volvo";
-let carName2;
+// carName2 = "Volvo";
+// let carName2;
 // console.log(carName2);//ReferenceError
 //-----const
-carName3 = "BMW";
-const carName3;
+// carName3 = "BMW";
+// const carName3;
 // console.log(carName3);//SyntaxError
+//copy by value
+let aliAge = 27;
+let zahraAge = aliAge;
+aliAge = 28;
+// console.log(aliAge);
+// console.log(zahraAge);

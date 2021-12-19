@@ -95,11 +95,11 @@ Object.assign(admin4,user4,adminPremission,{canView : true});
 // console.log(admin4);//Object { name: "sanaz", canDelete: true }
 // ***********************************************add function as properties to object
 let user5 = {
-    name:"ali",
+    firstName:"ali",
     age:22,
     nationality : "iran",
     speak :function (message){
-        alert(message)
-    }
+        alert(`${this.firstName} said :${message}`);
+    },
 }
-// user5.speak("hello world");
+user5.speak("hello world");

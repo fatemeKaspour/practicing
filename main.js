@@ -62,5 +62,13 @@ let user1 ={
 }
 let admin = user1;
 user1.name = "mostafa"
-console.log(user1.name);//mostafa
-console.log(admin.name);//mostafa
+// console.log(user1.name);//mostafa
+// console.log(admin.name);//mostafa
+//************************************************Are two object by different name same or not?
+let user2 ={
+    name : "hasan",
+}
+let admin2 ={
+    name : "hasan",
+}
+// console.log(user2 === admin2);//false

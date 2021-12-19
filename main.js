@@ -72,3 +72,13 @@ let admin2 ={
     name : "hasan",
 }
 // console.log(user2 === admin2);//false
+// ************************************************copy properties of object to another object 1
+let user3 ={
+    name:"sanaz",
+}
+let admin3 = new Object;
+
+for (let key in user3){
+    admin3[key] = user3[key];
+}
+// console.log(admin3);//Object { name: "sanaz" }

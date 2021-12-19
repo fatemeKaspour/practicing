@@ -113,4 +113,4 @@ function User (firstName , lastName , age){
     }
 }
 let admin6 = new User('fateme' , 'kaspour' , 22);
-console.log(admin6);
+// console.log(admin6);

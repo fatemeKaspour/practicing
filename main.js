@@ -50,13 +50,13 @@ var carName;
 // carName3 = "BMW";
 // const carName3;
 // console.log(carName3);//SyntaxError
-//copy by value
+//************************************************copy by value
 let aliAge = 27;
 let zahraAge = aliAge;
 aliAge = 28;
 // console.log(aliAge);//28
 // console.log(zahraAge);//27
-//copy by Reference
+//************************************************copy by Reference
 let user1 ={
     name :"fateme",
 }

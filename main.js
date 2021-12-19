@@ -54,5 +54,13 @@ var carName;
 let aliAge = 27;
 let zahraAge = aliAge;
 aliAge = 28;
-// console.log(aliAge);
-// console.log(zahraAge);
+// console.log(aliAge);//28
+// console.log(zahraAge);//27
+//copy by Reference
+let user1 ={
+    name :"fateme",
+}
+let admin = user1;
+user1.name = "mostafa"
+console.log(user1.name);//mostafa
+console.log(admin.name);//mostafa

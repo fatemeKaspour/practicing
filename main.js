@@ -82,3 +82,14 @@ for (let key in user3){
     admin3[key] = user3[key];
 }
 // console.log(admin3);//Object { name: "sanaz" }
+// ************************************************copy properties of object to another object 2
+let user4 ={
+    name:"sanaz",
+}
+let adminPremission ={
+    canDelete : true,
+}
+let admin4 = new Object;
+Object.assign(admin4,user4,adminPremission);
+
+// console.log(admin4);//Object { name: "sanaz", canDelete: true }

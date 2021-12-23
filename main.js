@@ -114,3 +114,9 @@ function User (firstName , lastName , age){
 }
 let admin6 = new User('fateme' , 'kaspour' , 22);
 // console.log(admin6);
+//************************************************** a function to sum soccerPoints
+//wins : 3
+//draw : 1
+//lose : 0
+const soccerPOints =(wins , draws) => (wins * 3) + draws;
+console.log(soccerPOints(5,3));

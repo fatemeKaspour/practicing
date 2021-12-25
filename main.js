@@ -137,10 +137,13 @@ function Person (){
 //*************************************************default params
 const functionWithDefaultparams = function(parametrs = "defaul value"){
     return parametrs;
-
 }
 functionWithDefaultparams();//default value
 functionWithDefaultparams("new value");//new value
+//**************************************************spread operator
+//--copying an array
+const array1 = [1,2,3,4];
+const array2 = [...array1];//[1,2,3,4]
 //*************************************************rest parameters
 //when you don't know the parameters of function we use rest parameters
 const funcSample = (a,b,...rest) =>{

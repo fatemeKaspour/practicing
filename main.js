@@ -135,3 +135,8 @@ function Person (){
 //     },1000);//undefind ->because this object is in a function so can't access to initial value
 
 // };
+//*************************************************rest parameters
+//when you don't know the parameters of function we use rest parameters
+const funcSample = (a,b,...rest) =>{
+ console.log(...rest);
+}

@@ -29,7 +29,6 @@ let areaTriangle = (height , weight) => (height*weight)/2
 let isLessThan100 = (a , b) => (a + b >100) ? false : true;
 const result = isLessThan100(60,70);
 // console.log(result);
-//************************************************** end of functions
 //**************************************************object
 let user ={
     firstName : "fateme",
@@ -135,6 +134,13 @@ function Person (){
 //     },1000);//undefind ->because this object is in a function so can't access to initial value
 
 // };
+//*************************************************default params
+const functionWithDefaultparams = function(parametrs = "defaul value"){
+    return parametrs;
+
+}
+functionWithDefaultparams();//default value
+functionWithDefaultparams("new value");//new value
 //*************************************************rest parameters
 //when you don't know the parameters of function we use rest parameters
 const funcSample = (a,b,...rest) =>{

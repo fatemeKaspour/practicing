@@ -119,4 +119,11 @@ let admin6 = new User('fateme' , 'kaspour' , 22);
 //draw : 1
 //lose : 0
 const soccerPOints =(wins , draws) => (wins * 3) + draws;
-console.log(soccerPOints(5,3));
+// console.log(soccerPOints(5,3));
+//**************************************************use arrow function in function constructor
+function Person (){
+    this.name = "fateme kaspour";
+    setTimeout(()=>{
+        console.log(this.name)
+    },1000);
+};

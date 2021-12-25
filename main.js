@@ -149,7 +149,7 @@ let bakedDesserts = ['cake' , 'cookie' , 'donut'];
 let desserts = ['ice cream' , 'flan' , 'frezen yoghurt' , ...bakedDesserts];//ice cream,flan,frezen yoghurt,cake,cookie,donut;
 //-3- Array to arguments
 function numbers (num1 , num2 , num3){
-    console.log(num1 ,num2 ,num3);
+    // console.log(num1 ,num2 ,num3);
 }
 let numArray =[10,20,30];
 numbers(...numArray);//10,20,30
@@ -157,4 +157,10 @@ numbers(...numArray);//10,20,30
 //when you don't know the parameters of function we use rest parameters
 const funcSample = (a,b,...rest) =>{
  console.log(...rest);
+}
+//**************************************************for-of-loop
+let scores = [75,25,65];
+for(let score of scores ){
+    score = score + 5;
+    // console.log(score);//80 30 65
 }

@@ -164,3 +164,11 @@ for(let score of scores ){
     score = score + 5;
     // console.log(score);//80 30 65
 }
+//**************************************************array-for-each
+const arrayExample = [1,10,50,30,7,6];
+let arrayResult =[];
+arrayExample.forEach((item) =>{
+    if(item > 15){
+        arrayResult.push(item);//50 30
+    }
+});

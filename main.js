@@ -127,3 +127,11 @@ function Person (){
         console.log(this.name)
     },1000);
 };
+//wrong way for above function
+// function Person (){
+//     this.name = "fateme kaspour";
+//     setTimeout(function(){
+//         console.log(this.name)
+//     },1000);//undefind ->because this object is in a function so can't access to initial value
+
+// };

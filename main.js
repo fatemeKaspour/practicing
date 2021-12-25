@@ -141,9 +141,12 @@ const functionWithDefaultparams = function(parametrs = "defaul value"){
 functionWithDefaultparams();//default value
 functionWithDefaultparams("new value");//new value
 //**************************************************spread operator
-//--copying an array
+//-1-copying an array
 const array1 = [1,2,3,4];
 const array2 = [...array1];//[1,2,3,4]
+//-2-Inserting the elements of one array into another
+let bakedDesserts = ['cake' , 'cookie' , 'donut'];
+let desserts = ['ice cream' , 'flan' , 'frezen yoghurt' , ...bakedDesserts];//['ice cream' , 'flan' , 'frezen yoghurt' , 'cake' , 'cookie' , 'donut'];
 //*************************************************rest parameters
 //when you don't know the parameters of function we use rest parameters
 const funcSample = (a,b,...rest) =>{

@@ -146,7 +146,13 @@ const array1 = [1,2,3,4];
 const array2 = [...array1];//[1,2,3,4]
 //-2-Inserting the elements of one array into another
 let bakedDesserts = ['cake' , 'cookie' , 'donut'];
-let desserts = ['ice cream' , 'flan' , 'frezen yoghurt' , ...bakedDesserts];//['ice cream' , 'flan' , 'frezen yoghurt' , 'cake' , 'cookie' , 'donut'];
+let desserts = ['ice cream' , 'flan' , 'frezen yoghurt' , ...bakedDesserts];//ice cream,flan,frezen yoghurt,cake,cookie,donut;
+//-3- Array to arguments
+function numbers (num1 , num2 , num3){
+    console.log(num1 ,num2 ,num3);
+}
+let numArray =[10,20,30];
+numbers(...numArray);//10,20,30
 //*************************************************rest parameters
 //when you don't know the parameters of function we use rest parameters
 const funcSample = (a,b,...rest) =>{

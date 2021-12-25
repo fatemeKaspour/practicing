@@ -172,3 +172,6 @@ arrayExample.forEach((item) =>{
         arrayResult.push(item);//50 30
     }
 });
+//***************************************************array-filer
+const newArray = arrayExample.filter((item) => item >15);
+console.log(newArray);//Array [50,30]

@@ -25,7 +25,7 @@ let areaTriangle = (height , weight) => (height*weight)/2
 // }
 // const result = isLessThan100(60,70);
 // console.log(result);
-//make befor conditional function with ? and : and arrow function
+//make before conditional function with ? and : and arrow function
 let isLessThan100 = (a , b) => (a + b >100) ? false : true;
 const result = isLessThan100(60,70);
 // console.log(result);
@@ -60,30 +60,30 @@ let user1 ={
     name :"fateme",
 }
 let admin = user1;
-user1.name = "mostafa"
-// console.log(user1.name);//mostafa
-// console.log(admin.name);//mostafa
+user1.name = "Mustafa"
+// console.log(user1.name);//Mustafa
+// console.log(admin.name);//Mustafa
 //************************************************Are two object by different name same or not?
 let user2 ={
-    name : "hasan",
+    name : "Hasan",
 }
 let admin2 ={
-    name : "hasan",
+    name : "Hasan",
 }
 // console.log(user2 === admin2);//false
 // ************************************************copy properties of object to another object 1
 let user3 ={
-    name:"sanaz",
+    name:"saunas",
 }
 let admin3 = new Object;
 
 for (let key in user3){
     admin3[key] = user3[key];
 }
-// console.log(admin3);//Object { name: "sanaz" }
+// console.log(admin3);//Object { name: "saunas" }
 // ************************************************copy properties of object to another object 2
 let user4 ={
-    name:"sanaz",
+    name:"saunas",
 }
 let adminPremission ={
     canDelete : true,
@@ -94,9 +94,9 @@ Object.assign(admin4,user4,adminPremission,{canView : true});
 // console.log(admin4);//Object { name: "sanaz", canDelete: true }
 // ***********************************************add function as properties to object
 let user5 = {
-    firstName:"ali",
+    firstName:"Ali",
     age:22,
-    nationality : "iran",
+    nationality : "Iran",
     speak :function (message){
         alert(`${this.firstName} said :${message}`);
     },
@@ -111,7 +111,7 @@ function User (firstName , lastName , age){
         alert(`${this.firstName} said : ${message}`);
     }
 }
-let admin6 = new User('fateme' , 'kaspour' , 22);
+let admin6 = new User('fateme' , 'Kaspour' , 22);
 // console.log(admin6);
 //************************************************** a function to sum soccerPoints
 //wins : 3
@@ -131,12 +131,12 @@ function Person (){
 //     this.name = "fateme kaspour";
 //     setTimeout(function(){
 //         console.log(this.name)
-//     },1000);//undefind ->because this object is in a function so can't access to initial value
+//     },1000);//undefined ->because this object is in a function so can't access to initial value
 
 // };
-//*************************************************default params
-const functionWithDefaultparams = function(parametrs = "defaul value"){
-    return parametrs;
+//*************************************************default parameters
+const functionWithDefaultparams = function(parameters = "default value"){
+    return parameters;
 }
 functionWithDefaultparams();//default value
 functionWithDefaultparams("new value");//new value
@@ -146,10 +146,10 @@ const array1 = [1,2,3,4];
 const array2 = [...array1];//[1,2,3,4]
 //-2-Inserting the elements of one array into another
 let bakedDesserts = ['cake' , 'cookie' , 'donut'];
-let desserts = ['ice cream' , 'flan' , 'frezen yoghurt' , ...bakedDesserts];//ice cream,flan,frezen yoghurt,cake,cookie,donut;
+let desserts = ['ice cream' , 'flan' , 'frozen yoghurt' , ...bakedDesserts];//ice cream,flan,frozen yoghurt,cake,cookie,donut;
 //-3- Array to arguments
-function numbers (num1 , num2 , num3){
-    // console.log(num1 ,num2 ,num3);
+function numbers (numb1 , numb2 , numb3){
+    // console.log(numb1 ,numb2 ,numb3);
 }
 let numArray =[10,20,30];
 numbers(...numArray);//10,20,30
@@ -175,9 +175,9 @@ arrayExample.forEach((item) =>{
 //***************************************************array-filer
 const newArray = arrayExample.filter((item) => item >15);
 // console.log(newArray);//Array [50,30]
-//***************************************************array-maap
+//***************************************************array-map
 const addToNumbers = arrayExample.map((item) => item += 5 );
-//***************************************************promise in js
+//***************************************************promise in JS
 let isPromiseResolve = true;
 const learningPromise = new Promise ((resolve , reject) => {
     if(isPromiseResolve){
@@ -194,7 +194,7 @@ const learningPromise = new Promise ((resolve , reject) => {
     // console.log("finally done");
  });
 
-//*****************************************************class in js
+//*****************************************************class in JS
 class SpePerson{
     constructor(fName , age){
         this.fName = fName;

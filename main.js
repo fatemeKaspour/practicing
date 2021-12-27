@@ -190,4 +190,6 @@ const learningPromise = new Promise ((resolve , reject) => {
     console.log("promise is resolved" , message);
  }).catch((error) =>{
     console.log("promise is not resolved" , error);
+ }).finally(() =>{
+     console.log("finally done");
  })

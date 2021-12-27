@@ -192,4 +192,22 @@ const learningPromise = new Promise ((resolve , reject) => {
     console.log("promise is not resolved" , error);
  }).finally(() =>{
      console.log("finally done");
- })
+ });
+
+//*****************************************************class in js
+class SpePerson{
+    constructor(fName , age){
+        this.fName = fName;
+        this.age = age;
+    }
+    getName(){
+        this.makeSomeNewName();
+        return this.name;
+    }
+    makeSomeNewName(){
+        this.name = "kaspour";
+    }
+
+};
+const fateme = new SpePerson("fateme kaspour" , 22);
+fateme.getName();

@@ -174,4 +174,7 @@ arrayExample.forEach((item) =>{
 });
 //***************************************************array-filer
 const newArray = arrayExample.filter((item) => item >15);
-console.log(newArray);//Array [50,30]
+// console.log(newArray);//Array [50,30]
+//***************************************************array-maap
+const addToNumbers = arrayExample.map((item) => item += 5 );
+// console.log(addToNumbers);Array(6) [ 6, 15, 55, 35, 12, 11 ]

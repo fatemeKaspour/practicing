@@ -177,4 +177,17 @@ const newArray = arrayExample.filter((item) => item >15);
 // console.log(newArray);//Array [50,30]
 //***************************************************array-maap
 const addToNumbers = arrayExample.map((item) => item += 5 );
-// console.log(addToNumbers);Array(6) [ 6, 15, 55, 35, 12, 11 ]
+//***************************************************promise in js
+let isPromiseResolve = true;
+const learningPromise = new Promise ((resolve , reject) => {
+    if(isPromiseResolve){
+        resolve("you\'r promise has been fulfilled");
+    }else{
+        reject("you\'r promise has not been fulfilled");
+    }
+})
+ const myPromiseResult = learningPromise.then((message) =>{
+    console.log("promise is resolved" , message);
+ }).catch((error) =>{
+    console.log("promise is not resolved" , error);
+ })

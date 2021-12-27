@@ -187,11 +187,11 @@ const learningPromise = new Promise ((resolve , reject) => {
     }
 })
  const myPromiseResult = learningPromise.then((message) =>{
-    console.log("promise is resolved" , message);
+    // console.log("promise is resolved" , message);
  }).catch((error) =>{
-    console.log("promise is not resolved" , error);
+    // console.log("promise is not resolved" , error);
  }).finally(() =>{
-     console.log("finally done");
+    // console.log("finally done");
  });
 
 //*****************************************************class in js
@@ -202,12 +202,13 @@ class SpePerson{
     }
     getName(){
         this.makeSomeNewName();
-        return this.name;
+        return this.fName;
     }
     makeSomeNewName(){
-        this.name = "kaspour";
+        this.fName += "kaspour";
     }
 
 };
-const fateme = new SpePerson("fateme kaspour" , 22);
+const fateme = new SpePerson("fateme" , 22);
 fateme.getName();
+console.log(fateme);
